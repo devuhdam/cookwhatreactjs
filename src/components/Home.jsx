@@ -22,7 +22,7 @@ function Home() {
     }
 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/recommend', {
+      const response = await axios.post('https://madhuchetri.pythonanywhere.com/recommend', {
         ingredients,
       });
       setRecipes(response.data);
